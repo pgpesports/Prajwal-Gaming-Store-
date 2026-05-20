@@ -1,0 +1,153 @@
+Wellcome To Prajwal Gaming Store Official
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prajwal Gaming Store</title>
+
+<style>
+
+body{
+background:#0d0d0d;
+color:white;
+font-family:Arial;
+text-align:center;
+margin:0;
+padding:0;
+}
+
+header{
+background:red;
+padding:20px;
+}
+
+h1{
+margin:10px 0;
+}
+
+.container{
+width:90%;
+max-width:400px;
+margin:30px auto;
+background:#1a1a1a;
+padding:20px;
+border-radius:15px;
+}
+
+input,select{
+width:100%;
+padding:12px;
+margin-top:15px;
+border:none;
+border-radius:10px;
+font-size:16px;
+}
+
+button{
+width:100%;
+padding:12px;
+margin-top:20px;
+background:red;
+color:white;
+border:none;
+border-radius:10px;
+font-size:18px;
+cursor:pointer;
+}
+
+button:hover{
+background:#ff3333;
+}
+
+.payment{
+margin-top:20px;
+background:#262626;
+padding:15px;
+border-radius:10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h1>PRAJWAL GAMING STORE</h1>
+
+<p>FREE FIRE DIAMOND 🔥❤️</p>
+
+</header>
+
+<div class="container">
+
+<input type="text" id="uid" placeholder="Enter Free Fire UID">
+
+<select id="topup">
+
+<option>Select Topup</option>
+
+<option>25 💎 = Rs.40</option>
+<option>50 💎 = Rs.80</option>
+<option>115 💎 = Rs.110</option>
+<option>240 💎 = Rs.230</option>
+<option>355 💎 = Rs.340</option>
+<option>480 💎 = Rs.440</option>
+<option>610 💎 = Rs.580</option>
+<option>1090 💎 = Rs.1060</option>
+
+<option>Weekly = Rs.250</option>
+<option>Elite Weekly = Rs.90</option>
+<option>Monthly = Rs.1100</option>
+
+</select>
+
+<button onclick="sendOrder()">
+ORDER NOW
+</button>
+
+<div class="payment">
+
+<h3>Esewa / Khalti</h3>
+
+<h2>9865517366</h2>
+
+</div>
+
+</div>
+
+<script>
+
+function sendOrder(){
+
+var uid = document.getElementById("uid").value;
+
+var topup = document.getElementById("topup").value;
+
+if(uid == ""){
+alert("Please Enter UID");
+return;
+}
+
+if(topup == "Select Topup"){
+alert("Please Select Topup");
+return;
+}
+
+var text =
+"🔥 PRAJWAL GAMING STORE 🔥%0A%0A"
++ "UID: " + uid + "%0A"
++ "TOPUP: " + topup;
+
+window.location.href =
+"https://wa.me/9779865517376?text=" + text;
+
+}
+
+</script>
+
+</body>
+</html>
